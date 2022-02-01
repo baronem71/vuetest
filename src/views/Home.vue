@@ -1,18 +1,12 @@
+<script setup lang="ts">
+import { ref } from 'vue'
+import HomeButtons from '../components/HomeButtons.vue'
+
+// const count = ref(0)
+</script>
+
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <HomeButtons msg="Dashboard" />
   </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-
-export default defineComponent({
-  name: "Home",
-  components: {
-    HelloWorld,
-  },
-});
-</script>

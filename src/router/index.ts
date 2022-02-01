@@ -16,6 +16,22 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: '/shows',
+    name: 'shows',
+    component: () => import(/* webpackChunkName: "shows" */ '../views/Shows.vue')
+  },
+  {
+    path: '/showdetails/:id',
+    name: 'showdetails',
+    props: true,
+    component: () => import(/* webpackChunkName: "shows" */ '../views/ShowDetails.vue')
+  },
+  {
+    path: '/otherapi',
+    name: 'otherapi',
+    component: () => import(/* webpackChunkName: "shows" */ '../views/Otherapi.vue')
+  },
 ];
 
 const router = createRouter({
